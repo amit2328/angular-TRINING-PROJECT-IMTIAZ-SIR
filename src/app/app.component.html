@@ -1,0 +1,17 @@
+<h1> my angular app </h1>
+
+<button (click)='showStudent()'>show students</button>
+<button (click)='showNONStudent()'>show students</button>
+<BR>
+<BR>
+
+<div *ngFor="let customer of customers">
+  <div *ngIf='customer.isStudent === isShow
+   || initial === true'>
+  Name is : {{ customer.name}}
+  <BR> Age is : {{customer.age }}
+  <BR> Is Student? : {{customer.isStudent }}
+  <BR> CGPA : {{customer.cgpa }}
+  <BR>
+  </div>
+</div>
